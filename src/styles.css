@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  color: white;
+}
+
+.game {
+  position: relative;
+
+  height: 0;
+  padding-top: 100%;
+
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  max-width: 100%;
+  height: auto;
+}
+
+#ball {
+  z-index: 2;
+}
+
+#maze {
+  z-index: 1;
+}
