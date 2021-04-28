@@ -121,10 +121,12 @@ class Maze {
    */
   create() {
     // Pick a maze with a high-ish number of connected components
+
     this.initMaze();
 
     while (this.unionFind.componentCount() < 550) {
       this.reset();
+
       this.initMaze();
     }
 
